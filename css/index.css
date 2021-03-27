@@ -1,6 +1,7 @@
 body {
   color: rgba(255,255,255);
   background-image: url("../assets/img/moroccan-flower-dark.png");
+  border: 4px dotted rgb(200,200,200);
 }
 
 h1 {

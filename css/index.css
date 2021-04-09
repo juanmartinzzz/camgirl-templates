@@ -1,18 +1,105 @@
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(255,255,255);
   background-image: url("../assets/img/moroccan-flower-dark.png");
-  border: 4px dotted rgb(200,200,200);
-}
-
-h1 {
-  font-size: 64px;
-  font-style: italic;
-  text-align: center;
+  padding-bottom: 160px;
 }
 
 #hero {
   margin: 45px auto 30px auto;
-  max-width: 650px;
+  max-width: 300px;
   min-height: 300px;
   background-color: rgba(200,200,200, 0.3);
+  border-radius: 999px;
+}
+
+h1 {
+  font-size: 80px;
+  font-style: italic;
+  text-align: center;
+  color: rgb(206, 14, 88);
+  --text-shadow: 0 0 1px rgb(255,255,255);
+ 
+  background: -webkit-linear-gradient(rgb(214, 107, 148), rgb(151, 5, 61));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#container {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+  min-height: 300px;
+  background-color: rgba(37, 68, 153, 0.4);
+  -border: 1px solid rgb(151, 5, 61);
+  border: 1px solid rgb(30,30,30);
+  box-shadow: 0 0 20px 7px rgba(30,30,30, 0.7);
+}
+
+.card h2 {
+  margin: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#container .card.menu {
+  width: 40%;
+  max-width: 500px;
+  border-radius: 35px 0 0 0;
+}
+
+#container .card .body { 
+  height: 100%;
+  margin: 0 20px 20px 20px;
+}
+
+#container .card.menu .body {
+  display: flex;
+  background: linear-gradient(90deg, rgb(44, 139, 202), rgb(53, 47, 88));
+}
+
+#container .card.menu table {
+  margin: 0;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.3); 
+}
+
+#container .card.menu table th,
+#container .card.menu table td {
+  padding: 0 12px;
+  vertical-align: middle;
+}
+
+#container .card.menu table td {
+  border-top: 1px solid rgb(255,255,255);
+}
+
+#container .card.likes {
+  width: 40%;
+  max-width: 500px;
+  border-radius: 0 0 35px 0;
+}
+
+#container .card.likes .body {
+  background: linear-gradient(135deg, #36A9E1, #29235C);
+  background: linear-gradient(135deg, #36A9E1 -15%, #29235C 85%);
+}
+
+#container-rules {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+#container-rules .card {
+  display: flex;
+  width: calc(80% + 32px);
+  max-width: 1032px;
 }

@@ -38,7 +38,7 @@ h1 {
   min-height: 300px;
   background-color: rgba(37, 68, 153, 0.4);
   -border: 1px solid rgb(151, 5, 61);
-  border: 1px solid rgb(30,30,30);
+  border: 1px solid rgb(238, 255, 0);
   box-shadow: 0 0 20px 7px rgba(30,30,30, 0.7);
 }
 
@@ -51,17 +51,19 @@ h1 {
 #container .card.menu {
   width: 40%;
   max-width: 500px;
-  border-radius: 35px 0 0 0;
+  border-radius: 35px 0 35px 0;
 }
 
 #container .card .body { 
   height: 100%;
   margin: 0 20px 20px 20px;
+  border-radius: 0 25px 0 25px;
 }
 
 #container .card.menu .body {
   display: flex;
   background: linear-gradient(90deg, rgb(44, 139, 202), rgb(53, 47, 88));
+  border: 1px solid rgb(238, 255, 0);
 }
 
 #container .card.menu table {
@@ -83,12 +85,13 @@ h1 {
 #container .card.likes {
   width: 40%;
   max-width: 500px;
-  border-radius: 0 0 35px 0;
+  border-radius: 35px 0 35px 0;
 }
 
 #container .card.likes .body {
   border-radius: 0 0 25px 0;
   background: linear-gradient(135deg, #36A9E1 -15%, #29235C 85%);
+  border: 1px solid rgb(238, 255, 0);
 }
 
 #container-rules {
@@ -101,4 +104,20 @@ h1 {
   display: flex;
   width: calc(80% + 32px);
   max-width: 1032px;
+  border-radius: 25px 25px 25px 25px;
+  min-height: 200px;
+}
+
+#container-schedule {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  border: dotted rgb(151, 5, 61)
+}
+
+#container-schedule .card {
+  display: flex;
+  width: calc(80% + 32px);
+  max-width: 1032px;
+  border-radius: 25px 25px 25px 25px;
 }

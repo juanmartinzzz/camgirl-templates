@@ -14,6 +14,7 @@ body {
 }
 
 #hero {
+  display: block;
   margin: 45px auto 30px auto;
   max-width: 300px;
   min-height: 300px;
@@ -128,6 +129,7 @@ h1 {
 }
 
 #banner-2-models {
+  display: block;
   margin: 56px auto 0 auto;
   width: calc(80% + 32px);
   height: 300px;
@@ -140,6 +142,7 @@ h1 {
 }
 
 #container-rules {
+  display: block;
   margin-top: 48px;
   display: flex;
   justify-content: center;
@@ -166,6 +169,7 @@ h1 {
 }
 
 #container-schedule {
+  display: block;
   margin-top: 48px;
   display: flex;
   justify-content: center;

@@ -1,16 +1,29 @@
+@font-face {
+  font-family: 'soft-elegance';
+  src: url('../assets/fonts/Soft\ Elegance.ttf')  format('truetype');
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'soft-elegance', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(255,255,255);
-  background-image: url("../assets/img/moroccan-flower-dark.png");
-  padding-bottom: 160px;
+  background-image: url("../assets/img/background.jpg");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
 }
 
 #hero {
   margin: 45px auto 30px auto;
   max-width: 300px;
   min-height: 300px;
-  background-color: rgba(200,200,200, 0.3);
+  background-image: url("../assets/img/hero.jpg");
+  background-size: auto 100%;
+  background-position: -35px 0px;
+  background-repeat: no-repeat;
+  background-color: rgba(200,200,200, 0.5);
   border-radius: 999px;
+  box-shadow: 0 0 8px rgba(100,100,100, 0.8);
 }
 
 h1 {
@@ -18,10 +31,11 @@ h1 {
   font-style: italic;
   text-align: center;
   color: rgb(206, 14, 88);
+  color: rgb(30,30,30);
  
-  background: -webkit-linear-gradient(rgb(214, 107, 148), rgb(151, 5, 61));
+  /* background: -webkit-linear-gradient(rgb(214, 107, 148), rgb(151, 5, 61));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 #container {
@@ -35,17 +49,23 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 0 16px;
-  min-height: 300px;
+  min-height: 400px;
   background-color: rgba(37, 68, 153, 0.4);
-  -border: 1px solid rgb(151, 5, 61);
-  border: 1px solid rgb(238, 255, 0);
-  box-shadow: 0 0 20px 7px rgba(30,30,30, 0.7);
+  --border: 1px solid rgb(151, 5, 61);
+  --border: 1px solid rgb(238, 255, 0);
+  border: 1px solid rgb(100, 100, 100);
+  box-shadow: 0 0 15px 4px rgba(30,30,30, 0.6);
+  background-image: url("../assets/img/card-background.gif");
+  background-size: auto 100%;
+  background-position: center;
+  --background-repeat: no-repeat;
 }
 
 .card h2 {
   margin: 15px 0;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 0 0 3px rgba(0,0,0, 1);
 }
 
 #container .card.menu {
@@ -89,9 +109,34 @@ h1 {
 }
 
 #container .card.likes .body {
+  padding: 10px;
+  font-size: 14px;
+  text-align: justify;
   border-radius: 0 0 25px 0;
-  background: linear-gradient(135deg, #36A9E1 -15%, #29235C 85%);
-  border: 1px solid rgb(238, 255, 0);
+  border: 2px solid rgb(238, 255, 0);
+  background: no-repeat bottom right/auto 80% url("../assets/img/likes-background.png"), 
+              linear-gradient(135deg, #36A9E1 -15%, #29235C 85%);
+}
+
+#container .card.likes .body p:first-of-type {
+  margin-top: 16px;
+}
+
+#container .card.likes .body p:last-of-type {
+  margin-top: 16px;
+  padding-right: 160px;
+}
+
+#banner-2-models {
+  margin: 56px auto 0 auto;
+  width: calc(80% + 32px);
+  height: 300px;
+  box-shadow: 0 0 5px 2px rgba(30,30,30, 0.4);
+  background-image: url("../assets/img/banner-2-models.jpg");
+  background-size: 110% auto;
+  background-position: center -80px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 #container-rules {
@@ -104,20 +149,45 @@ h1 {
   display: flex;
   width: calc(80% + 32px);
   max-width: 1032px;
-  border-radius: 25px 25px 25px 25px;
-  min-height: 200px;
+  min-height: 250px;
+  background: no-repeat bottom left 50px/auto 92% url("../assets/img/rules-background.png"), 
+              linear-gradient(#29235CFF 0, #36A9E1C0 85%);
+}
+
+/* #container-rules .card h2 {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #36A9E1C0;
+} */
+
+#container-rules .card p {
+  padding: 16px 0 0 260px; 
+  line-height: 22px;
 }
 
 #container-schedule {
   margin-top: 48px;
   display: flex;
   justify-content: center;
-  border: dotted rgb(151, 5, 61)
 }
 
 #container-schedule .card {
   display: flex;
   width: calc(80% + 32px);
   max-width: 1032px;
-  border-radius: 25px 25px 25px 25px;
+  min-height: inherit;
+  background: linear-gradient(#29235CFF 0, #36A9E1C0 85%);
+}
+
+#container-schedule .card table {
+  margin: 16px 32px 32px;
+}
+
+#container-schedule .card table th,
+#container-schedule .card table td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid rgb(255, 230, 0);
+  background-color: rgb(30,30,30, 0.2);
 }
